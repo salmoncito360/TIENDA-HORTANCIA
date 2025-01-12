@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Regalos y Festividades "Hortencia"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Regalos y Festividades "Hortencia"</h1>
+        <p>Encuentra el regalo perfecto para cualquier ocasión</p>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#pedidos">Realizar Pedido</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="productos">
+            <h2>Productos Destacados</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/200" alt="Carro de fricción">
+                    <h3>Carro de fricción</h3>
+                    <p>Precio: $35 MXN</p>
+                    <p>Para regalos, navidad y día de reyes</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200" alt="Camioneta Lobo 4x4">
+                    <h3>Camioneta Lobo 4x4</h3>
+                    <p>Precio: $40 MXN</p>
+                    <p>Para regalos, navidad y día de reyes</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200" alt="Cuatrimoto">
+                    <h3>Cuatrimoto</h3>
+                    <p>Precio: $30 MXN</p>
+                    <p>Para regalos, navidad y día de reyes</p>
+                </div>
+            </div>
+        </section>
+        <section id="pedidos">
+            <h2>Realizar Pedido</h2>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="producto">Producto:</label><br>
+                <input type="text" id="producto" name="producto" required><br><br>
+
+                <label for="cantidad">Cantidad:</label><br>
+                <input type="number" id="cantidad" name="cantidad" required><br><br>
+
+                <label for="entrega">Tipo de entrega:</label><br>
+                <select id="entrega" name="entrega">
+                    <option value="local">En local</option>
+                    <option value="domicilio">A domicilio</option>
+                </select><br><br>
+
+                <label for="direccion">Dirección:</label><br>
+                <input type="text" id="direccion" name="direccion"><br><br>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>© 2025 Tienda de Regalos y Festividades "Hortencia"</p>
+        <p>Dirección: San Lucas Amalinalco, Chalco, Estado de México</p>
+    </footer>
+</body>
+</html>
